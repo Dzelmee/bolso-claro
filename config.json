@@ -1,0 +1,40 @@
+{
+  "name": "Bolso Claro",
+  "subtitle": "Seu dinheiro, com mais clareza.",
+  "plural": "registros",
+  "singular": "Registro",
+  "fields": [
+    {
+      "key": "descricao",
+      "label": "Descrição",
+      "type": "text"
+    },
+    {
+      "key": "categoria",
+      "label": "Categoria",
+      "type": "select",
+      "options": [
+        "Moradia",
+        "Alimentação",
+        "Transporte",
+        "Lazer",
+        "Salário",
+        "Outros"
+      ]
+    },
+    {
+      "key": "tipo",
+      "label": "Tipo",
+      "type": "select",
+      "options": [
+        "Receita",
+        "Despesa"
+      ]
+    },
+    {
+      "key": "valor",
+      "label": "Valor (R$)",
+      "type": "number"
+    }
+  ]
+}
