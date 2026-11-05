@@ -1,34 +1,26 @@
-# Bolso Claro
+# bolso.claro — Cada decisão começa com clareza.
 
-Controle de finanças com receitas, despesas, saldo e gráfico por categoria.
+Projeto Full Stack demonstrativo, com interface própria para o segmento **finance**.
+
+## Stack
+HTML5, CSS3 (Scroll-Driven Animations, layouts responsivos), JavaScript ES Modules, Node.js (HTTP nativo), JSON local.
 
 ## Executar
-
-Requer Node.js 22 ou superior. Sem dependências npm externas.
-
 ```bash
 npm test
 npm start
 ```
+Acesse http://localhost:3000. Configure `PORT` para mudar a porta.
 
-Acesse http://localhost:3000. Para mudar a porta: `PORT=3100 npm start` (PowerShell: `$env:PORT=3100; npm start`).
-
-## Arquitetura
-
-- Front-end: HTML semântico, CSS responsivo e JavaScript nativo.
-- Back-end: servidor HTTP Node.js e API REST em `/api/records`.
-- Persistência: `data/records.json` local, não versionado.
-- Rotas: GET/POST `/api/records`, PUT/DELETE `/api/records/:id`, GET `/api/health`.
-- Testes: `node --test`, CRUD, validação e arquivos estáticos.
-
-## Acessibilidade e responsividade
-
-Skip link, foco visível, labels, botões com nomes acessíveis, diálogos nativos, regiões de status e suporte a `prefers-reduced-motion`. Breakpoints em 600 e 900 px.
+## Funcionalidades
+- Operações CRUD com persistência em arquivo JSON e validação no servidor.
+- Busca, formulários em diálogo nativo, métricas calculadas a partir dos registros.
+- Tema claro/escuro salvo no navegador, parallax e animações progressivas (com redução de movimento).
+- Layout específico do produto e seções editoriais com fotografias externas.
+- Indicadores por tipo de registro.
 
 ## Limitações
+Projeto de portfólio: sem autenticação, multiusuários, pagamentos reais ou banco de dados de produção. Fotografias remotas precisam de conexão à internet. Estatísticas exibidas são calculadas a partir dos dados salvos e começam zeradas. A checagem de conflito de agenda na interface não é garantia de exclusividade sob concorrência no servidor.
 
-Protótipo funcional para estudo/portfólio, não serviço de produção. Não possui autenticação, autorização, banco relacional nem pagamentos reais. A sacola da loja é salva no navegador e o checkout é simulado. Não declare conformidade WCAG sem auditoria manual e automatizada.
-
-## Design
-
-Identidade visual própria para este domínio, com ilustrações SVG locais estáticas.
+## Fotos e licença
+Imagens remotas hospedadas no Unsplash (https://unsplash.com/license). Conferir direitos de pessoas, marcas e condições atuais antes de uso comercial. URLs: https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=85, https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1100&q=85.
